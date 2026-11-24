@@ -29,6 +29,7 @@ def display_grid(grid: list[list[str]]):
     :param grid: The multi-dimensional list that is a Tic-Tac-Toe board.
     :return: No return, directly prints to terminal.
     """
+    print("This is the board: ")
     for i in range(len(grid)):
         for j in range(len(grid[i])):
             if j == 2:
@@ -68,7 +69,7 @@ def determine_winner(grid: list[list[str]]):
             winner = grid[0][2]
 
     if winner == "":
-        winner = "tie"
+        winner = "Tie"
     return winner
 
 display_grid(grid_1)
